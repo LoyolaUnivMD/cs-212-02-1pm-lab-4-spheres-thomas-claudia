@@ -1,4 +1,13 @@
 
+/* Programmers:  Thomas and Claudia
+ * Course:  CS 212
+ * Due Date: 2/18/24
+ * Lab Assignment: 4
+ * Problem Statement: Create a sphere class that has the radius and location
+ * Data In: x, y, z, radius
+ * Data Out: area, volume, distance, if it collides with another sphere
+ * Credits: none
+ */
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
