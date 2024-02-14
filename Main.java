@@ -16,13 +16,16 @@ class Main {
     public static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         Sphere[] spheres = new Sphere[3];
+
         spheres[0] = new Sphere(0.0, 0.0, 0.0, 43.26);
         spheres[1] = new Sphere(26.0, 42.0, 79.0, 0.395);
         spheres[2] = new Sphere(25.3, 43.1, 77.8, 1.4);
 
+
         System.out.println("Sun volume: " + spheres[0].volume());
         System.out.println("Earth volume: " + spheres[1].volume());
         System.out.println("PlanetX volume: " + spheres[2].volume());
+
         System.out.println("Sun area: " + spheres[0].Area());
         System.out.println("Earth area: " + spheres[1].Area());
         System.out.println("PlanetX area: " + spheres[2].Area());
