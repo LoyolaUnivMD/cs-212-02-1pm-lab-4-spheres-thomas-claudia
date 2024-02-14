@@ -7,11 +7,16 @@ volume:
 distance:
 
 Methods:
+
+
 Name: Area
-return 4 * Math.pi * Math.pow(radius, 2)
+Parameter: radius
+return 4 * Math.pi * Math.pow(radius, 2) (double)
 
 Name: Volume
-return 4/3 * Math.pi * Math.pow(radius, 3)
+Parameter: radius
+return 4/3 * Math.pi * Math.pow(radius, 3) (double)
 
-Distance(Sphere sphere2)
-return Math.sqrt(Math.pow(x - sphere2.x, 2) + Math.pow(y - sphere2.y, 2) + Math.pow(z - sphere2.z , 2))
+Name: Distance(Sphere sphere2)
+Parameter: x,y,z
+return Math.sqrt(Math.pow(x - sphere2.x, 2) + Math.pow(y - sphere2.y, 2) + Math.pow(z - sphere2.z , 2)) (double)
