@@ -1,11 +1,14 @@
-Design: 
+Design:
 Class name: Sphere
-Radius(1): 
+Radius(1):
 points(3):
 area:
 volume:
 distance:
 
+Area:
+return 4 * Math.pi * Math.pow(radius, 2)
 
-
+Volume:
+return 4/3 * Math.pi * Math.pow(radius, 3)
 
