@@ -9,11 +9,11 @@ distance:
 Methods:
 Name: Area
 Parameter: radius
-return 4 * Math.pi * Math.pow(radius, 2) (double)
+return 4 * Math.PI * Math.pow(radius, 2) (double)
 
 Name: Volume
 Parameter: radius
-return 4/3 * Math.pi * Math.pow(radius, 3) (double)
+return 4/3 * Math.PI * Math.pow(radius, 3) (double)
 
 Name: Distance(Sphere sphere2)
 Parameter: x,y,z
