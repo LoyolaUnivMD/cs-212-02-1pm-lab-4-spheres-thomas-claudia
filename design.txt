@@ -13,5 +13,15 @@ return 4 * Math.pi * Math.pow(radius, 2)
 Name: Volume
 return 4/3 * Math.pi * Math.pow(radius, 3)
 
-Distance(Sphere sphere2)
+Name: Distance(Sphere sphere2)
 return Math.sqrt(Math.pow(x - sphere2.x, 2) + Math.pow(y - sphere2.y, 2) + Math.pow(z - sphere2.z , 2))
+
+Name: collide
+paramaters: Sphere sphere2
+return: boolean
+1. distance = Distance(sphere2)
+2. radiusSum = radius + sphere2.radius
+3. if distance < radiusSum
+    a. return true
+4. otherwise
+    a. return false
