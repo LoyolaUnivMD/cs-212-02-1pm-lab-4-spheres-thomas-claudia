@@ -23,6 +23,9 @@ class Main {
         System.out.println("Sun volume: " + spheres[0].volume());
         System.out.println("Earth volume: " + spheres[1].volume());
         System.out.println("PlanetX volume: " + spheres[2].volume());
+        System.out.println("Sun area: " + spheres[0].Area());
+        System.out.println("Earth area: " + spheres[1].Area());
+        System.out.println("PlanetX area: " + spheres[2].Area());
 
         if (spheres[0].collide(spheres[1])){
             System.out.println("The Sun and Earth collide");
@@ -33,18 +36,29 @@ class Main {
         if (spheres[0].collide(spheres[2])){
             System.out.println("The Earth and PlanetX collide");
         }
+
+
+
         System.out.println("Enter a location in space");
         double x = doubleInput("Enter x: ");
         double y = doubleInput("Enter y: ");
         double z = doubleInput("Enter z: ");
 
-        double smallestDist = 0.0;
-
-        for(Sphere sphere : spheres){
-            double temp = sphere.Distance(x, y, z);
+        double smallestDist = spheres[0].Distance(x,y,z);
+        int closest = 0;
+        for(int i = 1; i < spheres.length; i ++){
+            double temp = spheres[i].Distance(x, y, z);
             if (temp < smallestDist){
                 smallestDist = temp;
+                closest = i;
             }
+        }
+        if (closest == 0){
+            System.out.println("The point is closest to the Sun");
+        } else if (closest == 1) {
+            System.out.println("The point is closest to the Earth");
+        }else {
+            System.out.println("The point is closest to PlanetX");
         }
     }
     public static double doubleInput(String prompt) {
