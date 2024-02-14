@@ -6,9 +6,10 @@ area:
 volume:
 distance:
 
-Area:
+Methods:
+Name: Area
 return 4 * Math.pi * Math.pow(radius, 2)
 
-Volume:
+Name: Volume
 return 4/3 * Math.pi * Math.pow(radius, 3)
 
