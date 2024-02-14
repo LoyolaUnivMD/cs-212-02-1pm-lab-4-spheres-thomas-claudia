@@ -1,1 +1,11 @@
- Design goes here
+Design: 
+Class name: Sphere
+Radius(1): 
+points(3):
+area:
+volume:
+distance:
+
+
+
+
